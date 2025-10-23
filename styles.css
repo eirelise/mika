@@ -1,0 +1,44 @@
+body    {
+    font-family: Arial, sans-serif;
+    background-color: #ee9dbd;
+    margin: 0;
+    padding: 0;
+}
+/*-------------- Navigation Bar Style ------------*/
+nav {
+    background-color: #8b3c3c;
+    height: 80px;
+    justify-content: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-evenly;
+    display: flex;
+}
+nav ul li {
+    margin-top: 30px;
+
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 20px;
+    transform: 2.5s;
+}
+nav ul li a:hover {
+    font-size: 25px;
+}
+/*-------------- Footer Style ------------*/
+footer {
+    background-color: #8b5e3c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: monospace;
+}
