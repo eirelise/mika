@@ -2,31 +2,55 @@
     font-family: 'CustomFont';
     src: url('font.ttf') format('truetype');
 }
-
 body    {
     background-color: #ee9dbd;
     margin: 0;
     padding: 0;
-    font-family: 'CustomFont', sans-serif;
+    font-family: 'CustomFont';
+}
+a {
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+}
+
+/*-------------- Header Style ------------*/
+h1 {
+    margin: auto;
+    text-align: center;
+    background-color: #8b5e3c;
+    padding: 40px;
+    font-size: 80px;
+}
+.header {
+    margin: 0px;
+    background-color: #8b5e3c;
+    color: white;
+    height: 200px;
 }
 /*-------------- Navigation Bar Style ------------*/
 nav {
+    margin: 0px;
     background-color: #8b3c3c;
-    height: 80px;
+    height: 100px;
     justify-content: center;
     display: flex;
-    flex-direction: row;
+    text-align: center;
+    align-items: center;
 }
 .nav-button {
+    font-family: customFont;
+    font-size: 30px;
     margin: auto;
-    background-color: #8b3c3c;
-    border: solid 2px white;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
+    background-color: #ffffff;
+    border: solid 5px white;
+    border-radius: 40px;
     cursor: pointer;
-    width: 80px;
+    min-width: 150px;
+    height: 60px;
+    max-height: 60px;
     transition: 1s ease-in-out;
+    text-align: center;
 }
 .nav-button:hover {
    scale: 110%;
