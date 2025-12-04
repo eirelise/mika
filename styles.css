@@ -14,13 +14,34 @@ a {
     font-size: inherit;
     color: inherit;
 }
+p {
+    font-size: 20px;
+    margin: 20px;
+}
 /*-------------- Header Style ------------*/
 h1 {
     margin: auto;
     text-align: center;
-    background-color: #9dbdee;
+    background-color: #ffffff;
     padding: 40px;
     font-size: 80px;
+    animation-name: header-ani;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes header-ani {
+    0% {background-color: rgb(140, 200, 240);}
+    10% {background-color: rgb(140, 140, 240);}
+    20% {background-color: rgb(200, 140, 240);}
+    30% {background-color: rgb(240, 140, 240);}
+    40% {background-color: rgb(240, 140, 140);}
+    50% {background-color: rgb(240, 200, 140);}
+    60% {background-color: rgb(240, 240, 140);}
+    70% {background-color: rgb(200, 240, 140);}
+    80% {background-color: rgb(140, 240, 140);}
+    90% {background-color: rgb(140, 240, 200);}
+    100% {background-color: rgb(140, 240, 240);}
 }
 /*-------------- Navigation Bar Style ------------*/
 nav {
@@ -112,7 +133,7 @@ footer {
     scale: 110%;
 }
 /*-------------- All @media styling ------------*/
-@media (max-width: 900px) {
+@media (max-width: 850px) {
     .nav-button {
         margin: auto 5px;
         min-width: 60px;
