@@ -20,7 +20,7 @@ p {
 }
 main {
     width: 80%;
-    margin: auto;
+    margin: 40px auto;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
@@ -53,10 +53,9 @@ h1 {
 }
 /*-------------- Navigation Bar Style ------------*/
 nav {
-    margin: 0px;
-    margin-bottom: 20px;
     background-color: #8b3c3c;
     height: 100px;
+    width: 100%;
     justify-content: center;
     display: flex;
     text-align: center;
@@ -110,9 +109,7 @@ footer {
     background-color: #8b3c3c;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+    padding: 10px 0px;
     width: 100%;
 }
 /*-------------- OC CONTENT STYLE ------------*/
