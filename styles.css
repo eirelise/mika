@@ -15,7 +15,7 @@ a {
     color: inherit;
 }
 p {
-    font-size: 20px;
+    font-size: 1em;
     margin: 20px;
 }
 main {
@@ -32,7 +32,7 @@ h1 {
     text-align: center;
     background-color: #ffffff;
     padding: 40px;
-    font-size: 80px;
+    font-size: 4em;
     animation-name: header-ani;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -64,7 +64,7 @@ nav {
 }
 .nav-button {
     font-family: CustomFont;
-    font-size: 30px;
+    font-size: 2em;
     margin: auto 20px;
     background-color: #ffffff;
     border: solid 5px white;
@@ -90,7 +90,7 @@ nav {
 }
 .nav-button-here {
     font-family: CustomFont;
-    font-size: 37px;
+    font-size: 2.6em;
     margin: auto 20px;
     background-color: #ee9dbd;
     color: white;
@@ -156,7 +156,7 @@ footer {
         min-width: 60px;
         max-height: 80px;
         padding: 8px 12px;
-        font-size: 30px;
+        font-size: 2em;
     }
     .nav-button-here:hover {
        scale: 100%;
