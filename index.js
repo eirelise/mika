@@ -53,3 +53,8 @@ let something = "hey!";
 console.log("Normal:", (something) );
 console.log("Caesar:",caesarEncrypt((something), 3));
 console.log("Kode 7tihupcw");
+// Rock Paper Scissors Game
+const choices = ["rock", "paper", "scissors"];
+function getComputerChoice() {
+  
+}
