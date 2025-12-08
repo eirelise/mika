@@ -22,20 +22,6 @@ footer {
     position: fixed;
     bottom: 0;
 }
-article{
-    background-color: #e38686;
-    position: fixed;
-    right: 0;
-    height: 100%;
-    width: 40%;
-}
-section {
-    height: 100%;
-    width: 20%;
-    position: fixed;
-    left: 0;
-    background-color: #ffffff;
-}
 .nav-button {
     font-size: 2em;
     margin: auto 20px;
@@ -49,8 +35,35 @@ a{
     color: inherit;
 
 }
+.slotHolder{
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(237, 150, 150);
+    width: 20%;
+    position: fixed;
+    left: 0;
+}
 .slots{
     aspect-ratio: 1/1;
-    height: 20px;
-    background-color: #c77272;
+    background-color: rgb(105, 175, 237);
+    width: 80%;
+    margin: 10px auto;
+}
+.slotHolder{
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.accesoryHolder{
+    height: 100%;
+    width: 400%;
+    background-color: rgb(237, 150, 150);
+    background-color: #e38686;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    resize: vertical;
 }
