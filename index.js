@@ -2,59 +2,46 @@
 console.log("Hello, World!");
 console.log("This is Mika's index.js file.");
 
-let username;
-document.getElementById(`mySubmit`).onclick = function() {
-    username = document.getElementById(`myText`).value;
-     if (username.toLowerCase() === "mika") {
-        document.getElementById(`myH4`).textContent = `There can only be one Mika!`;
-    } else {
-        document.getElementById(`myH4`).textContent = `Hello ${username}!!!`;
+
+
+// My birthday
+
+
+const birthdayMonth= 2; // March
+const birthdayDay= 7;
+
+function updateCountdown() {
+    const now = new Date();
+    let year = now.getFullYear();
+
+    // Create birthday date for this year
+    let birthday = new Date(year, birthdayMonth, birthdayDay);
+
+    // If birthday has passed this year, set to next year
+    if (now > birthday) {
+        birthday = new Date(year + 1, birthdayMonth, birthdayDay);
     }
+
+    const diff = birthday - now;
+
+    if (diff <= 0) {
+        document.getElementById("countdown").textContent = "🎉 Happy Birthday! 🎉";
+        return;
+    }
+
+    // Calculate time parts
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("countdown").textContent =
+        `${days}d ${hours}h ${minutes}m ${seconds}s until Mika's birthday 🎂`;
 }
 
-
-
-//binary to decimal SOMETHING
-let binaryNum = "01111000 01111001 01111010" 
-let desimaltall = parseInt(binaryNum, 2)   
-console.log(`desimaltall:`, binaryNum, `tilsvarer desimaltall`, desimaltall);
-
-
-function toBinary(number) { 
-  return number.toString(2).padStart(8, "0") 
-} 
- const tekst = "Elise";
-
-for (let i = 0; i < tekst.length; i++) {
-  const ch = tekst[i];
-  const asciiCode = ch.charCodeAt(0);
-  const binary = asciiCode.toString(2).padStart(8, "0"); // padStart adds leading zeros
-
-  console.log(`Tegn: ${ch} | ASCII: ${asciiCode} | Binært: ${binary}`);
-} 
-console.log(`All together: ${tekst} in binary is: ${tekst.split('').map(c => toBinary(c.charCodeAt(0))).join(' ')}`);
-console.log(`-----------------------------`);
-function caesarEncrypt(text, shift) {
-  shift = shift % 26;
-  return text.split('').map(char => {
-    if (char >= 'A' && char <= 'Z') {
-      const code = char.charCodeAt(0);
-      return String.fromCharCode(((code - 65 + shift + 26) % 26) + 65);
-    }
-    if (char >= 'a' && char <= 'z') {
-      const code = char.charCodeAt(0);
-      return String.fromCharCode(((code - 97 + shift + 26) % 26) + 97);
-    }
-    return char;
-  }).join('');
-}
-console.log(`Caesar Cipher Tests:`);
-let something = "hey!";
-console.log("Normal:", (something) );
-console.log("Caesar:",caesarEncrypt((something), 3));
-console.log("Kode 7tihupcw");
-// Rock Paper Scissors Game
-const choices = ["rock", "paper", "scissors"];
-function getComputerChoice() {
-  
-}
+// Update every second
+document.addEventListener('DOMContentLoaded', () => {
+    updateCountdown(); // Call once immediately
+    setInterval(updateCountdown, 1000); //1000 milliseconds = 1 second
+});
+updateCountdown(); // Initial call

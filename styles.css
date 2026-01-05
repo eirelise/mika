@@ -112,6 +112,12 @@ footer {
     padding: 10px 0px;
     width: 100%;
 }
+/*-------------- COUNTDOWN STYLE ------------*/
+#countdown {
+    font-size: 2em;
+    font-weight: bold;
+    color: #8b3c3c;
+}
 /*-------------- OC CONTENT STYLE ------------*/
 .oc-container {
     display: flex;
